@@ -4,6 +4,9 @@
 This guide provides step-by-step instructions to set up and configure Rancher on an RKE2 cluster, including installing necessary tools like `kubectl` and `Helm`.
 
 ---
+![rancher-rke2](https://github.com/user-attachments/assets/9884574d-0a8a-4ebe-aca0-bf830bad9720)
+
+---
 
 ## Prerequisites  
 
