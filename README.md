@@ -176,4 +176,11 @@ kubectl get secret --namespace cattle-system bootstrap-secret -o go-template='{{
 ---
 
 ## Conclusion  
-This setup provides a functional Rancher cluster for Kubernetes management. In the next steps, we can integrate tools like **NGINX Ingress Controller** and **NGINX App Protect** to further enhance this deployment.  
+This setup provides a functional Rancher cluster for Kubernetes management. In the next steps, we can integrate tools like **NGINX Plus Ingress Controller** and **NGINX App Protect** to further enhance this deployment.  
+
+---
+
+## References
+- [RKE2 Documentation](https://docs.rke2.io/)
+- [Rancher Manager Documentation](https://ranchermanager.docs.rancher.com/)
+
