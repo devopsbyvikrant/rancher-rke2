@@ -162,14 +162,17 @@ kubectl get secret --namespace cattle-system bootstrap-secret -o go-template='{{
 
 ---
 
-## Notes:
+## Troubleshooting:
 - Ensure each node has a unique hostname. For duplicate hostnames, set the `node-name` parameter in the `config.yaml` file.  
 - Monitor logs for troubleshooting:  
   ```bash
   journalctl -u rke2-server -f
   journalctl -u rke2-agent -f
   ```
-
+- If the bootstrap password doesn't work, you can reset it using the following command:  
+  ```bash
+  kubectl -n cattle-system exec $(kubectl -n cattle-system get pods -l app=rancher | grep '1/1' | head -1 | awk '{ print $1 }') -- reset-password
+  ```
 ---
 
 ## Conclusion  
