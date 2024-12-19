@@ -99,6 +99,7 @@ sudo yum install -y container-selinux
 3. **Configure Kubeconfig File:**  
    - Retrieve kubeconfig from master node:  
      ```bash
+     mkdir -p ~/.kube
      cp /etc/rancher/rke2/rke2.yaml ~/.kube/config
      chmod 600 ~/.kube/config
      ```
